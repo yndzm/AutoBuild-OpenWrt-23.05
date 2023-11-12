@@ -20,10 +20,7 @@
 echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 #echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
 # Add custom packages
-git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
+git https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git passwall_packages
-git clone https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
-#eof
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argo
