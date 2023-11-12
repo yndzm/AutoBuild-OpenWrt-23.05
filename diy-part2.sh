@@ -13,7 +13,7 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 echo "uci -q batch << EOI
-set network.lan.ipaddr='192.168.10.1'
+set network.lan.ipaddr='192.168.1.11'
 commit network
 set wireless.radio0.htmode='HT20'
 set wireless.radio0.band='2g'
