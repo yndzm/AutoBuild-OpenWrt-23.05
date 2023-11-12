@@ -27,7 +27,7 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >
 # echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
 # Add custom packages
 git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
-git clone https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
+# git clone https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 git clone https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 git clone https://github.com/sirpdboy/luci-app-ddns-go package/luci-app-ddns-go
 # git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
