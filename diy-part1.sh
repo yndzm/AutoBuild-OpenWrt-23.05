@@ -36,7 +36,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt
 git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # git clone https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 # git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
-git clone https://github.com/vernesong/OpenClash package/openclash
+git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 # git clone https://github.com/linkease/istore-ui package/app-store-ui
 # git clone https://github.com/linkease/istore package/luci-app-store
 # git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
