@@ -47,3 +47,5 @@ git clone https://github.com/sirpdboy/luci-app-ddns-go package/ddns-go
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argo
 #eof
+./scripts/feeds update -a
+./scripts/feeds install -a
