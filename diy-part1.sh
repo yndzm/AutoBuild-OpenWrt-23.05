@@ -28,6 +28,10 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 # echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git' >>feeds.conf.default
 # echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
+# echo >> feeds.conf.default
+# echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+# ./scripts/feeds update istore
+# ./scripts/feeds install -d y -p istore luci-app-store
 # Add custom packages
 git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
 # git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
@@ -43,7 +47,7 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskma
 # git clone https://github.com/linkease/istore package/luci-app-store
 # git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-# git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argo
+# git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/chenmozhijin/luci-app-adguardhome.git package/luci-app-adguardhome
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
@@ -53,7 +57,9 @@ svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
 svn export https://github.com/sbwml/luci-app-mosdns/trunk/v2dat package/v2dat
 svn export https://github.com/sirpdboy/luci-app-ddns-go/trunk/ddns-go package/ddns-go
 svn export https://github.com/sirpdboy/luci-app-ddns-go/trunk/luci-app-ddns-go package/luci-app-ddns-go
-
+# svn export https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
+# svn export https://github.com/linkease/istore/trunk/luci package/luci-app-store
+# svn export https://github.com/immortalwrt/luci/tree/openwrt-23.05/applications/luci-app-zerotier package/luci-app-zerotier
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 #eof
