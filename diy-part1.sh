@@ -17,6 +17,8 @@
 # rm -rf feeds/packages/net/v2ray-geodata
 # git clone --depth 1 https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # git clone --depth 1 https://github.com/sbwml/luci-app-mosdns --single-branch -b v5 package/mosdns
+rm -rf feeds/packages/net/mosdns
+rm -rf feeds/luci/applications/luci-app-mosdns
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
@@ -27,21 +29,27 @@
 # echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git' >>feeds.conf.default
 # echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
 # Add custom packages
-git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
+git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
 # git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone https://github.com/sirpdboy/luci-app-ddns-go package/ddns-go
-git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
-git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+# git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
+git clone https://github.com/lisaac/luci-app-diskman.git package/ddns-go
+# git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
+# git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
+# git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 # git clone https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
 # git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
-git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
+# git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 # git clone https://github.com/linkease/istore-ui package/app-store-ui
 # git clone https://github.com/linkease/istore package/luci-app-store
 # git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argo
-#eof
+git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+svn export https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/luci-app-mosdns
+svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+#eof
