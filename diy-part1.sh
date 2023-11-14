@@ -47,8 +47,9 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/ddns-go
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-svn export https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/luci-app-mosdns
-svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
+svn export https://github.com/sbwml/luci-app-mosdns/trunk/v5/luci-app-mosdns package/luci-app-mosdns
+svn export https://github.com/sbwml/luci-app-mosdns/trunk/v5/mosdns package/mosdns
+svn export https://github.com/sbwml/luci-app-mosdns/trunk/v5/v2dat package/v2dat
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
