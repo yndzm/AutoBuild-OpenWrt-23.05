@@ -28,22 +28,21 @@
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 # echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git' >>feeds.conf.default
 # echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
-echo 'src-git packages https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
 # echo >> feeds.conf.default
 # echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
 # ./scripts/feeds update istore
 # ./scripts/feeds install -d y -p istore luci-app-store
 # Add custom packages
-# git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
+git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
 # git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 # git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
-# git clone https://github.com/lisaac/luci-app-diskman.git package/ddns-go
-# git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
-# git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
-# git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
-# git clone https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
+git clone https://github.com/lisaac/luci-app-diskman.git package/ddns-go
+git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
 # git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
-# git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 # git clone https://github.com/linkease/istore-ui package/app-store-ui
 # git clone https://github.com/linkease/istore package/luci-app-store
 # git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
