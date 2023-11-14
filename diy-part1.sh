@@ -49,17 +49,17 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskma
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/chenmozhijin/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-svn export https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/luci-app-mosdns
-svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
-svn export https://github.com/sbwml/luci-app-mosdns/trunk/v2dat package/v2dat
-svn export https://github.com/sirpdboy/luci-app-ddns-go/trunk/ddns-go package/ddns-go
-svn export https://github.com/sirpdboy/luci-app-ddns-go/trunk/luci-app-ddns-go package/luci-app-ddns-go
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+git clone https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
+git clone https://github.com/sbwml/luci-app-mosdns.git package/mosdns
+# git clone https://github.com/sbwml/luci-app-mosdns/trunk/v2dat package/v2dat
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/luci-app-ddns-go
 # svn export https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
 # svn export https://github.com/linkease/istore/trunk/luci package/luci-app-store
 # svn export https://github.com/immortalwrt/luci/tree/openwrt-23.05/applications/luci-app-zerotier package/luci-app-zerotier
-./scripts/feeds update -a
-./scripts/feeds install -a
+# ./scripts/feeds update -a
+# ./scripts/feeds install -a
 #eof
