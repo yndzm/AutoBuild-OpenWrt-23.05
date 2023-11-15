@@ -62,12 +62,12 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskma
 # svn export https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
 # svn export https://github.com/linkease/istore/trunk/luci package/luci-app-store
 # svn export https://github.com/immortalwrt/luci/tree/openwrt-23.05/applications/luci-app-zerotier package/luci-app-zerotier
-rm -rf feeds/luci/applications/luci-app-adguardhome
-rm -rf feeds/packages/net/adguardhome
-rm -rf feeds/luci/applications/luci-app-mosdns
-rm -rf feeds/packages/net/mosdns
-rm -rf feeds/luci/applications/luci-app-passwall
-rm -rf feeds/luci/applications/luci-app-ddns-go
-rm -rf feeds/packages/net/ddns-go
-rm -rf feeds/luci/applications/luci-app-openclash
+# m -rf feeds/luci/applications/luci-app-adguardhome
+# rm -rf feeds/packages/net/adguardhome
+# rm -rf feeds/luci/applications/luci-app-mosdns
+# rm -rf feeds/packages/net/mosdns
+# rm -rf feeds/luci/applications/luci-app-passwall
+# rm -rf feeds/luci/applications/luci-app-ddns-go
+# rm -rf feeds/packages/net/ddns-go
+# rm -rf feeds/luci/applications/luci-app-openclash
 #eof
