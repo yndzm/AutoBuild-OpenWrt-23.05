@@ -71,3 +71,5 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskma
 # rm -rf feeds/packages/net/ddns-go
 # rm -rf feeds/luci/applications/luci-app-openclash
 #eof
+./scripts/feeds update -a
+./scripts/feeds install -a
