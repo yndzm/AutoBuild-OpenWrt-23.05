@@ -27,8 +27,8 @@ echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git' >>feeds.conf.default
-echo 'src-git adguardhome https://github.com/chenmozhijin/luci-app-adguardhome' >>feeds.conf.default
-echo 'src-git ddns-go https://github.com/sirpdboy/luci-app-ddns-go.git' >>feeds.conf.default
+# echo 'src-git adguardhome https://github.com/chenmozhijin/luci-app-adguardhome' >>feeds.conf.default
+# echo 'src-git ddns-go https://github.com/sirpdboy/luci-app-ddns-go.git' >>feeds.conf.default
 # echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
 # echo >> feeds.conf.default
 # echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
@@ -50,7 +50,7 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskma
 # git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
 # git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-# git clone https://github.com/chenmozhijin/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone https://github.com/chenmozhijin/luci-app-adguardhome.git package/luci-app-adguardhome
 # git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 # git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
