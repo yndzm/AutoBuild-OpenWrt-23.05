@@ -14,14 +14,14 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
+# echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
 echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git' >>feeds.conf.default
 # echo 'src-git redsocks2 https://github.com/semigodking/redsocks.git' >>feeds.conf.default
 # Add custom packages
-git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
-git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+# git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
+# git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 # git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 # git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 # git clone https://github.com/lionshi/luci-app-poweroff package/luci-app-poweroff
