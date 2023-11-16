@@ -23,7 +23,7 @@ rm -rf feeds/packages/net/adguardhome
 # Add custom packages
 git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
+git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
