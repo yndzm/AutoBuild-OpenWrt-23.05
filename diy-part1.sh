@@ -12,7 +12,8 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
+rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/net/adguardhome
 # Add a feed source
 # echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 # echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
