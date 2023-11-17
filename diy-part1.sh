@@ -11,11 +11,10 @@
 #
 
 # Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/net/adguardhome
 # Add a feed source
-# echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
+echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
 # echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 # echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git' >>feeds.conf.default
@@ -25,7 +24,7 @@ git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskma
 git clone https://github.com/chenmozhijin/luci-app-adguardhome.git package/luci-app-adguardhome
 git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
 # git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
+# svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 svn export https://github.com/sbwml/luci-app-mosdns/trunk/mosdns package/mosdns
 svn export https://github.com/sbwml/luci-app-mosdns/trunk/v2dat package/v2dat
