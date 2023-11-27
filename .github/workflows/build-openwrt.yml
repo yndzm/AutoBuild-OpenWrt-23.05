@@ -33,8 +33,8 @@ env:
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
   ADD_FULLCONE: true
-  FULLCONE_SH: config/x86/openwrt-23.05.2/fullcone.sh
-  FULLCONE_PATCH_PATH: config/x86/openwrt-23.05.2/luci-app-firewall-fullcone.patch
+  FULLCONE_SH: shscripts/fullcone.sh
+  FULLCONE_PATCH_PATH: shscripts/luci-app-firewall-fullcone.patch
 
 jobs:
   build:
