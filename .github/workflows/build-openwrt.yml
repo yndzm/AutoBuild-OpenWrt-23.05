@@ -32,6 +32,9 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
+  ADD_FULLCONE: true
+  FULLCONE_SH: config/x86/openwrt-23.05.2/fullcone.sh
+  FULLCONE_PATCH_PATH: config/x86/openwrt-23.05.2/luci-app-firewall-fullcone.patch
 
 jobs:
   build:
@@ -84,6 +87,18 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         $GITHUB_WORKSPACE/scripts/preset-clash-core.sh
         $GITHUB_WORKSPACE/scripts/preset-adguard-core.sh
+    
+    - name: Append Fullcone Nat depend
+      if: env.ADD_FULLCONE == 'true'
+      run: |
+       chmod +x $FULLCONE_SH
+       cd openwrt
+       $GITHUB_WORKSPACE/$FULLCONE_SH
+       cd feeds/luci
+       git diff applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js
+ 
+    - name: Install feeds
+      run: cd openwrt && ./scripts/feeds install -a    
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
