@@ -38,7 +38,7 @@ rm -rf feeds/packages/net/adguardhome
 # git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
 
 #克隆passwall环境插件
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall
 
 #克隆的源码放在small文件夹
 mkdir package/small
@@ -46,7 +46,7 @@ pushd package/small
 
 #克隆源码
 #passwall
-git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
+#git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
 #mosdns
 git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
 #v2ray-geodata
@@ -57,6 +57,6 @@ git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
 #adguardhome
 git clone --depth 1 https://github.com/chenmozhijin/luci-app-adguardhome.git
 #OpenClash
-git clone --depth 1 https://github.com/vernesong/OpenClash.git
+#git clone --depth 1 https://github.com/vernesong/OpenClash.git
 #diskman
-git clone --depth 1 https://github.com/lisaac/luci-app-diskman.git
+#git clone --depth 1 https://github.com/lisaac/luci-app-diskman.git
