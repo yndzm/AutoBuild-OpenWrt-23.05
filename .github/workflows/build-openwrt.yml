@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
-  REPO_BRANCH: v23.05.2
+  REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: x86-64.config
   DIY_P1_SH: diy-part1.sh
@@ -32,9 +32,6 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
-  ADD_FULLCONE: true
-  FULLCONE_SH: fullcone/fullcone.sh
-  FULLCONE_PATCH_PATH: fullcone/luci-app-firewall-fullcone.patch
 
 jobs:
   build:
@@ -84,18 +81,6 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-    
-    - name: Append Fullcone Nat depend
-      if: env.ADD_FULLCONE == 'true'
-      run: |
-       chmod +x $FULLCONE_SH
-       cd openwrt
-       $GITHUB_WORKSPACE/$FULLCONE_SH
-       cd feeds/luci
-       git diff applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js
- 
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a    
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
