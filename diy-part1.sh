@@ -98,3 +98,7 @@ git clone --depth 1 https://github.com/chenmozhijin/luci-app-adguardhome.git pac
 #git clone --depth 1 https://github.com/vernesong/OpenClash.git
 #diskman
 #git clone --depth 1 https://github.com/lisaac/luci-app-diskman.git
+#修改版本为编译日期
+#cp -f feeds/smpackage/.github/diy/banner package/base-files/files/etc/banner
+#sed -i "s/%D %V, %C/openwrt $(date +'%m.%d') by Masaaki/g" package/base-files/files/etc/banner
+sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWrt by Masaaki'/g"  package/base-files/files/etc/openwrt_release
