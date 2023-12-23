@@ -55,7 +55,7 @@ export GEO_MMDB=https://github.com/alecthw/mmdb_china_ip_list/raw/release/lite/C
 export GEO_SITE=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geosite.dat
 export GEO_IP=https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat
 
-git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
+git clone --depth 1 https://github.com/vernesong/OpenClash.git
 
 cd OpenClash/luci-app-openclash/root/etc/openclash
 curl -sfL -o ./Country.mmdb $GEO_MMDB
