@@ -12,6 +12,10 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+#修改版本为编译日期
+#cp -f feeds/smpackage/.github/diy/banner package/base-files/files/etc/banner
+#sed -i "s/%D %V, %C/openwrt $(date +'%m.%d') by Masaaki/g" package/base-files/files/etc/banner
+sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWrt by Masaaki'/g"  package/base-files/files/etc/openwrt_release
 echo "uci -q batch << EOI
 set network.lan.ipaddr='192.168.1.11'
 commit network
