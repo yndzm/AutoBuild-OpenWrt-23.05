@@ -79,21 +79,21 @@ cd /workdir/OpenClash
 cp -r luci-app-openclash /workdir/openwrt/package/
 
 #克隆的源码放在small文件夹
-mkdir package/small
-pushd package/small
+#mkdir package/small
+#pushd package/small
 
 #克隆源码
 #passwall
 #git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
 #mosdns
-git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
+git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git package/luci-app-mosdns
 #v2ray-geodata
 #git clone https://github.com/sbwml/v2ray-geodata
 #smartdns
 #git clone --depth=1 https://github.com/pymumu/luci-app-smartdns.git
 #git clone --depth=1 https://github.com/pymumu/openwrt-smartdns.git
 #adguardhome
-git clone --depth 1 https://github.com/chenmozhijin/luci-app-adguardhome.git
+git clone --depth 1 https://github.com/chenmozhijin/luci-app-adguardhome.git package/luci-app-adguardhome
 #OpenClash
 #git clone --depth 1 https://github.com/vernesong/OpenClash.git
 #diskman
