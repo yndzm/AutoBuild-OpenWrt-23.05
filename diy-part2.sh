@@ -17,7 +17,7 @@
 #sed -i "s/%D %V, %C/openwrt $(date +'%m.%d') by Masaaki/g" package/base-files/files/etc/banner
 sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWrt by Masaaki'/g"  package/base-files/files/etc/openwrt_release
 echo "uci -q batch << EOI
-set network.lan.ipaddr='192.168.1.11'
+set network.lan.ipaddr='10.0.0.2'
 commit network
 set wireless.radio0.htmode='HT20'
 set wireless.radio0.band='2g'
